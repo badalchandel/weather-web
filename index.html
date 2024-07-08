@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="onediv">
+            <img id="image-container" src="https://api.unsplash.com/search/photos?page=1&query=city&client_id=KmAl00U7hxyRuHW5mBmMh-rbbRK0hPp-lZwfBJ6xrMk">
+        </div>
+        <div class="seconddiv">
+            <div class="secondfirst">
+            <input type="text" placeholder="search weather">
+            <button><i class="uil uil-search"></i></button>
+            </div>
+            <div class="secondsecond">
+                <p class="msgc"></p>
+                <p class="msgt">
+                    <p class="temp"></p>
+                </p>
+                <p class="msgh"></p>
+                <p class="msgp"></p>
+                <p class="msgw"></p>
+            </div>
+            <div class="secondthird">
+                <button class="refresh"><i class="uil uil-refresh"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+</html>
