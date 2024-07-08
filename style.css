@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: auto;
+    margin-top: 10%;
+    width: 300px;
+    height: 500px;
+    background: black;
+    border-radius: 35px;
+}
+.onediv{
+    width: 300px;
+    height: 250px;
+}
+.onediv img{
+    width: 300px;
+    height: 250px;
+    border-radius: 35px 35px 0 0;
+}
+.seconddiv{
+    width: 300px;
+    height: 250px;
+}
+.secondfirst{
+    width: 300px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.secondfirst input{
+    width: 230px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    padding: .2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.secondfirst button{
+    width: 50px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .2rem;
+    cursor: pointer;
+}
+.secondfirst button:hover{
+    color: green;
+}
+.secondsecond{
+    width: 300px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+.secondsecond p{
+    width: 300px;
+    height: 25px;
+}
+.temp{
+    font-size: 2rem;
+    color: #fff;
+}
+.secondthird{
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondthird .refresh{
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    animation: rotate 10s reverse infinite;
+}
+.secondthird .refresh:hover{
+    color: red;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
