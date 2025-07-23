@@ -5,33 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Weather</title>
 </head>
 <body>
-    <div class="container">
-        <div class="onediv">
-            <img id="image-container" src="https://api.unsplash.com/search/photos?page=1&query=city&client_id=KmAl00U7hxyRuHW5mBmMh-rbbRK0hPp-lZwfBJ6xrMk">
+    <div class="main-container">
+        <div class="app-header">
+            <img src="w.png" alt="Weatherly Logo" class="app-logo">
+            <span class="app-title">eather</span>
         </div>
-        <div class="seconddiv">
-            <div class="secondfirst">
-            <input type="text" placeholder="search weather">
-            <button><i class="uil uil-search"></i></button>
+        <div class="container">
+            <div class="onediv">
+                <img id="image-container" src="https://api.unsplash.com/search/photos?page=1&query=city&client_id=KmAl00U7hxyRuHW5mBmMh-rbbRK0hPp-lZwfBJ6xrMk">
             </div>
-            <div class="secondsecond">
-                <p class="msgc"></p>
-                <p class="msgt">
-                    <p class="temp"></p>
-                </p>
-                <p class="msgh"></p>
-                <p class="msgp"></p>
-                <p class="msgw"></p>
-            </div>
-            <div class="secondthird">
+            <div class="seconddiv">
+                <div class="secondfirst">
+                <input type="text" placeholder="search weather">
+                <button><i class="uil uil-search"></i></button>
                 <button class="refresh"><i class="uil uil-refresh"></i></button>
+                </div>
+                <div class="secondsecond">
+                    <div class="weather-main">
+                        <div class="weather-main-left">
+                            <div class="city-name"></div>
+                            <div class="overcast"></div>
+                        </div>
+                        <div class="weather-main-right">
+                            <div class="weather-icon-large"><img id="weather-icon-large" src="" alt="" style="display:none;" /></div>
+                            <div class="temp-large"></div>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="humidity"></div>
+                        <div class="pressure"></div>
+                        <div class="wind"></div>
+                        <div class="visibility"></div>
+                        <div class="sunrise"></div>
+                        <div class="sunset"></div>
+                        <div class="msgw"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast" id="forecast"></div>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
